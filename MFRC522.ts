@@ -418,7 +418,7 @@ namespace MFRC522 {
    export function Init() {
        pins.spiPins(DigitalPin.P15, DigitalPin.P14, DigitalPin.P13)
        pins.spiFormat(8, 0)
-       pins.digitalWritePin(DigitalPin.P16, 1)
+       pins.digitalWritePin(DigitalPin.P12, 1)
 
        // reset module
        SPI_Write(CommandReg, PCD_RESETPHASE)
